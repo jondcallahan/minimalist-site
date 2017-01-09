@@ -1,11 +1,16 @@
 <!DOCTYPE html>
-<html>
+<html ⚡>
     <head>
         <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,height=device-height,initial-scale=1,minimum-scale=1">
+        <link rel="canonical" href="https://joncallahan.co">
+        <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+        <script async custom-element="amp-analytics"
+        src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
+        <script async src="https://cdn.ampproject.org/v0.js"></script>
         <title>Jon Callahan</title>
-        <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
         <link rel="shortcut icon" href="wave.png">
-        <style media="screen">
+        <style amp-custom>
             body {
                 position: initial;
                 top: 0;
@@ -29,15 +34,15 @@
                 color: #2e2e2e;
                 font-family: Perpetua,Baskerville,Big Caslon,Palatino Linotype,Palatino,URW Palladio L,Nimbus Roman No9 L,serif;
             }
-            @media (min-width: 420px) and (min-height: 530px) {
+            @media (min-width: 420px) and (min-height: 700px) {
               body {
                 box-shadow: inset 0 0 0 40px #fff;
                 position: fixed;
                 margin: 0;
               }
             }
-            img {
-                margin: 0 auto;
+            amp-img {
+                margin: 1em auto 0;
                 border-radius: 4px;
                 height: 100px;
                 width: 100px;
@@ -46,11 +51,16 @@
                 background-size: contain;
                 /*border: 1px solid #cecece;*/
             }
-            /*The image makes the layout look wack on landscap devices*/
-            @media (min-height: 530px) {
-              img {
+            /*The image makes the layout look wack on landscape devices*/
+            @media (min-height: 700px) {
+              amp-img {
                 height: 250px;
                 width: 250px;
+              }
+            }
+            @media (min-width: 420px) and (min-height: 700px) {
+              amp-img {
+                margin: 0 auto;
               }
             }
             h1 {
@@ -77,9 +87,14 @@
                 display: flex;
                 -ms-flex-pack: distribute;
                     justify-content: space-around;
-                margin: 0 auto;
+                margin: 0 auto 1em;
                 width: 33%;
                 min-width: 250px;
+            }
+            @media (min-width: 420px) and (min-height: 700px) {
+              .links {
+                margin-bottom: 0;
+              }
             }
             .icon {
               display: inline-block;
@@ -93,13 +108,16 @@
               color: #2e2e2e;
             }
         </style>
+        <meta name="google-site-verification" content="KNV44E_ujp7ANEVUyBtvjQgQIgvcyQW8tnf_o5DDnsM" />
     </head>
     <body>
-          <img
+          <amp-img
             src="https://img.gs/gdrsctmgbc/full/https://joncallahan.co/headshot_bw.jpeg"
-            onerror="this.src = 'headshot_bw.jpeg'"
             alt="Jon Callahan's Headshot"
-          >
+            layout="responsive"
+            height="250"
+            width="250"
+          ></amp-img>
           <h1>Jon Callahan</h1>
           <p class="subheader">Software Engineer in California</p>
           <h2 class="cross">X</h2>
@@ -133,14 +151,20 @@
                   </svg>
               </a>
           </section>
-        <script>
-          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-          })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-          ga('create', 'UA-58343822-4', 'auto');
-          ga('send', 'pageview');
-        </script>
+          <amp-analytics type="googleanalytics" id="analytics1">
+          <script type="application/json">
+          {
+            "vars": {
+              "account": "UA-58343822-4"
+            },
+            "triggers": {
+              "trackPageview": {
+                "on": "visible",
+                "request": "pageview"
+              }
+            }
+          }
+          </script>
+        </amp-analytics>
     </body>
 </html>
