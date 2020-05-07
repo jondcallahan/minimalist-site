@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -79,25 +80,22 @@ export default function Home() {
             </svg>
           </a>
         </section>
+        <section>
+          <Link href="/books">
+            <a>Notes on books I've read</a>
+          </Link>
+        </section>
       </main>
-      <style jsx>{`
+      <style jsx global>{`
         main {
           position: initial;
           top: 0;
           bottom: 0;
           left: 0;
           right: 0;
-          display: -webkit-box;
-          display: -ms-flexbox;
           display: flex;
-          -webkit-box-orient: vertical;
-          -webkit-box-direction: normal;
-          -ms-flex-direction: column;
           flex-direction: column;
-          -ms-flex-line-pack: center;
           align-content: center;
-          -webkit-box-pack: center;
-          -ms-flex-pack: center;
           justify-content: center;
           text-align: center;
           background-color: #f5f7fa;
@@ -176,20 +174,21 @@ export default function Home() {
         }
 
         .links {
-          display: -webkit-box;
-          display: -ms-flexbox;
           display: flex;
-          -ms-flex-pack: distribute;
           justify-content: space-around;
-          margin: 0 auto 1em;
+          margin: 1em auto;
           width: 33%;
           min-width: 250px;
         }
-
-        @media (min-width: 420px) and (min-height: 700px) {
+         {
+          /* TODO fix css */
+        }
+         {
+          /* @media (min-width: 420px) and (min-height: 700px) {
           .links {
             margin-bottom: 0;
           }
+        } */
         }
 
         .icon {
