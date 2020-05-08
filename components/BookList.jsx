@@ -17,7 +17,7 @@ export default function BookList({ books }) {
             return (
               <div key={slug} id={slug}>
                 <figure>
-                  <Link href={{ pathname: `/book/${slug}` }}>
+                  <Link href="/book/[bookname]" as={`/book/${slug}`}>
                     <img
                       src={`images/books/${frontmatter.image}`}
                       alt={`Jacket image for ${frontmatter.title}`}
@@ -27,7 +27,7 @@ export default function BookList({ books }) {
                   </Link>
                 </figure>
                 <p>Rating: {frontmatter.rating} / 10</p>
-                <Link href={{ pathname: `/book/${slug}` }}>
+                <Link href="/book/[bookname]" as={`/book/${slug}`}>
                   <a>{frontmatter.title}</a>
                 </Link>
                 <p>By {frontmatter.author}</p>
