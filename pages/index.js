@@ -16,6 +16,10 @@ export default function Home() {
           name="google-site-verification"
           content="KNV44E_ujp7ANEVUyBtvjQgQIgvcyQW8tnf_o5DDnsM"
         />
+        <meta
+          name="description"
+          content="Hey I'm Jon Callahan, a Software Engineer at Intuit in the San Francisco Bay Area of California. Learn more about my background, interests, and career."
+        />
       </Head>
       <main>
         <img
