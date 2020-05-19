@@ -5,18 +5,9 @@ export default function Home() {
   return (
     <>
       <Head>
-        <meta charSet="utf-8" />
-        <meta
-          name="viewport"
-          content="width=device-width,height=device-height,initial-scale=1,minimum-scale=1"
-        />
         <link rel="canonical" href="https://www.joncallahan.com" />
         <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
         <title>Jon Callahan</title>
-        <meta
-          name="google-site-verification"
-          content="KNV44E_ujp7ANEVUyBtvjQgQIgvcyQW8tnf_o5DDnsM"
-        />
       </Head>
       <main>
         <img
@@ -86,7 +77,7 @@ export default function Home() {
           </Link>
         </section>
       </main>
-      <style jsx global>{`
+      <style jsx>{`
         main {
           position: initial;
           top: 0;
@@ -98,13 +89,7 @@ export default function Home() {
           align-content: center;
           justify-content: center;
           text-align: center;
-          background-color: #f5f7fa;
-          color: #2e2e2e;
-          font-family: Perpetua, Baskerville, Big Caslon, Palatino Linotype,
-            Palatino, URW Palladio L, Nimbus Roman No9 L, serif;
-          min-height: 100vh;
         }
-
         @media screen {
           img {
             /* Placeholder while image loads */
@@ -128,8 +113,6 @@ export default function Home() {
           border-radius: 4px;
           height: 100px;
           width: 100px;
-          box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1),
-            0 1px 2px 0 rgba(0, 0, 0, 0.06);
         }
 
         /*The image makes the layout look wack on landscape devices*/

@@ -9,20 +9,17 @@ class MyDocument extends Document {
   render() {
     return (
       <Html lang="en" dir="ltr">
-        <Head />
+        <Head>
+          <meta charSet="utf-8" />
+          <meta
+            name="viewport"
+            content="width=device-width,height=device-height,initial-scale=1,minimum-scale=1"
+          />
+          <link rel="stylesheet" href="/main.css" />
+        </Head>
         <body>
           <Main />
           <NextScript />
-          <style jsx global>{`
-            body {
-              background-color: #f5f7fa;
-              color: #2e2e2e;
-              font-family: Georgia;
-            }
-            p {
-              line-height: 1.5;
-            }
-          `}</style>
         </body>
       </Html>
     );

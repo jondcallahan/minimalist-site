@@ -16,16 +16,16 @@ export default function BookList({ books }) {
           books.map(({ slug, frontmatter }) => {
             return (
               <div key={slug} id={slug}>
-                <figure>
-                  <Link href="/book/[bookname]" as={`/book/${slug}`}>
+                <Link href="/book/[bookname]" as={`/book/${slug}`}>
+                  <a>
                     <img
                       src={`images/books/${frontmatter.image}`}
                       alt={`Jacket image for ${frontmatter.title}`}
                       loading="lazy"
                       height="350"
                     />
-                  </Link>
-                </figure>
+                  </a>
+                </Link>
                 <p>Rating: {frontmatter.rating} / 10</p>
                 <Link href="/book/[bookname]" as={`/book/${slug}`}>
                   <a>{frontmatter.title}</a>
@@ -49,11 +49,8 @@ export default function BookList({ books }) {
               margin-left: auto;
               margin-right: auto;
             }
-            figure {
-              margin: unset;
-              display: flex;
-            }
             img {
+              display: flex;
               width: auto;
               max-width: 100%;
               height: 350px;

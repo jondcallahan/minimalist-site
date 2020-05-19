@@ -31,9 +31,6 @@ export default function BookNote({ frontmatter, markdownBody, slug }) {
         </section>
       </article>
       <style jsx>{`
-        main {
-          background-color: #f5f7fa;
-        }
         article {
           width: 55ch;
           max-width: 85%;
@@ -41,8 +38,6 @@ export default function BookNote({ frontmatter, markdownBody, slug }) {
           margin-right: auto;
         }
         img {
-          box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1),
-            0 1px 2px 0 rgba(0, 0, 0, 0.06);
           height: 350px;
           width: auto;
           max-width: 100%;
