@@ -70,11 +70,11 @@ export default function Home() {
               </svg>
             </a>
           </section>
-          <section className="links">
+          {/* <section className="links">
             <Link href="/books">
               <a>Notes on books I've read</a>
             </Link>
-          </section>
+          </section> */}
         </article>
       </main>
       <style jsx>{`
