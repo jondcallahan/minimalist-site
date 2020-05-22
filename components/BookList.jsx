@@ -6,7 +6,7 @@ export default function BookList({ books }) {
   return (
     <>
       <Link href="/">
-        <a>⬅️ 🏡 Back to home</a>
+        <a className="back-link">⬅️ 🏡 Back to home</a>
       </Link>
       <main>
         <h1>A collection of books I've read and brief thoughts</h1>
@@ -41,31 +41,32 @@ export default function BookList({ books }) {
               </div>
             );
           })}
-        <style jsx>
-          {`
-            main {
-              width: 55ch;
-              max-width: 90%;
-              margin-left: auto;
-              margin-right: auto;
-            }
-            img {
-              display: flex;
-              width: auto;
-              max-width: 100%;
-              height: 350px;
-              margin: auto;
-              box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1),
-                0 1px 2px 0 rgba(0, 0, 0, 0.06);
-            }
-            @media screen and (max-width: 360px) {
-              img {
-                height: auto;
-              }
-            }
-          `}
-        </style>
       </main>
+      <style jsx>{`
+        main {
+          width: 55ch;
+          max-width: 90%;
+          margin-left: auto;
+          margin-right: auto;
+        }
+        a.back-link {
+          margin: 8px;
+        }
+        img {
+          display: flex;
+          width: auto;
+          max-width: 100%;
+          height: 350px;
+          margin: auto;
+          box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1),
+            0 1px 2px 0 rgba(0, 0, 0, 0.06);
+        }
+        @media screen and (max-width: 360px) {
+          img {
+            height: auto;
+          }
+        }
+      `}</style>
     </>
   );
 }

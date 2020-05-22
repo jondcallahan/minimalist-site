@@ -14,7 +14,7 @@ export default function BookNote({ frontmatter, markdownBody, slug }) {
         </title>
       </Head>
       <Link href={`/books#${slug}`} scroll={false}>
-        <a>⬅️ 📚 Back to book list</a>
+        <a className="back-link">⬅️ 📚 Back to book list</a>
       </Link>
       <article>
         <h1>{frontmatter.title}</h1>
@@ -31,6 +31,9 @@ export default function BookNote({ frontmatter, markdownBody, slug }) {
         </section>
       </article>
       <style jsx>{`
+        a.back-link {
+          margin: 8px;
+        }
         article {
           width: 55ch;
           max-width: 85%;
