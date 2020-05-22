@@ -5,9 +5,13 @@ export default function Home() {
   return (
     <>
       <Head>
+        <title>Jon Callahan</title>
         <link rel="canonical" href="https://www.joncallahan.com" />
         <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
-        <title>Jon Callahan</title>
+        <meta
+          name="description"
+          content="Hey I'm Jon Callahan, a Software Engineer at Intuit in the San Francisco Bay Area of California. Learn more about my background, interests, and career."
+        />
       </Head>
       <main>
         <article>
