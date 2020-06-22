@@ -15,12 +15,16 @@ export default function Home() {
       </Head>
       <main>
         <article>
-          <img
-            src="images/headshot_bw.jpeg"
-            alt="Jon Callahan's Headshot"
-            height="250"
-            width="250"
-          ></img>
+          <picture>
+            <source type="image/webp" srcSet="images/headshot_bw.webp" />
+            <source type="image/jpeg" srcSet="images/headshot_bw.jpeg" />
+            <img
+              src="images/headshot_bw.jpeg"
+              alt="Jon Callahan's Headshot"
+              height="250"
+              width="250"
+            />
+          </picture>
           <h1>Jon Callahan</h1>
           <p className="subheader">Software Engineer in California</p>
           <svg role="presentation" className="icon" viewBox="0 0 24 24">
