@@ -66,7 +66,7 @@ export default function Home() {
               </svg>
             </a>
 
-            <a href="mailto:hola@joncallahan.co">
+            <a href="mailto:j@joncallahan.com">
               <svg className="icon" viewBox="0 0 24 24">
                 <title>Email Jon</title>
                 <path d="M0 0h24v24H0z" fill="none" />
