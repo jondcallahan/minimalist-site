@@ -19,7 +19,7 @@ class MyDocument extends Document {
           <script
             data-goatcounter="https://joncallahan.goatcounter.com/count"
             async
-            src="//gc.zgo.at/count.js"
+            src="/count.js"
           ></script>
           <script
             dangerouslySetInnerHTML={{
