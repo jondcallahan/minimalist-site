@@ -11,10 +11,6 @@ class MyDocument extends Document {
       <Html lang="en" dir="ltr">
         <Head>
           <meta charSet="utf-8" />
-          <meta
-            name="viewport"
-            content="width=device-width,height=device-height,initial-scale=1,minimum-scale=1"
-          />
           <link rel="stylesheet" href="/main.css" />
           <script
             data-goatcounter="https://joncallahan.goatcounter.com/count"
