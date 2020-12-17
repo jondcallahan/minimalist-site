@@ -22,7 +22,7 @@ class MyDocument extends Document {
             src="https://api.pirsch.io/pirsch.js"
             id="pirschjs"
             async
-            data-code="1bskwv5asb8HdqyG56PZ8B5BhV814gUc"
+            data-code="mQfoBSehhlgIKklMPvmWIDFhd5VbCuhM"
           ></script>
           <script
             dangerouslySetInnerHTML={{
