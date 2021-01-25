@@ -16,6 +16,7 @@ export default function Home() {
       <main>
         <article>
           <picture>
+            <source type="image/avif" srcSet="images/headshot_bw.avif" />
             <source type="image/webp" srcSet="images/headshot_bw.webp" />
             <source type="image/jpeg" srcSet="images/headshot_bw.jpeg" />
             <img
