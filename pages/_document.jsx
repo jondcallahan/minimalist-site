@@ -18,13 +18,6 @@ class MyDocument extends Document {
             src="/count.js"
           ></script>
           <script
-            type="text/javascript"
-            src="https://api.pirsch.io/pirsch.js"
-            id="pirschjs"
-            async
-            data-code="mQfoBSehhlgIKklMPvmWIDFhd5VbCuhM"
-          ></script>
-          <script
             dangerouslySetInnerHTML={{
               __html: `if (window.location.hash === '#skipgc') {localStorage.setItem('skipgc', 't')} window.goatcounter = {no_onload: localStorage.getItem('skipgc') === 't' || ('doNotTrack' in navigator && navigator.doNotTrack === '1')}`,
             }}
