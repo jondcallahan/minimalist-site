@@ -22,6 +22,12 @@ class MyDocument extends Document {
               __html: `if (window.location.hash === '#skipgc') {localStorage.setItem('skipgc', 't')} window.goatcounter = {no_onload: localStorage.getItem('skipgc') === 't' || ('doNotTrack' in navigator && navigator.doNotTrack === '1')}`,
             }}
           />
+          <script async src="https://cdn.panelbear.com/analytics.js?site=JdFbYCwwcsZ"></script>
+          <script dangerouslySetInnerHTML={{__html: `
+              window.panelbear = window.panelbear || function() { (window.panelbear.q = window.panelbear.q || []).push(arguments); };
+              panelbear('config', { site: 'JdFbYCwwcsZ' });
+          `}} />
+
         </Head>
         <body>
           <Main />
