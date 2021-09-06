@@ -10,7 +10,7 @@ export default function Home() {
         <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
         <meta
           name="description"
-          content="Hey I'm Jon Callahan, a Software Engineer at Intuit in the San Francisco Bay Area of California. Learn more about my background, interests, and career."
+          content="Hey I'm Jon Callahan, a Software Engineer at Intuit in Chicago. Learn more about my background, interests, and career."
         />
       </Head>
       <main>
@@ -27,23 +27,21 @@ export default function Home() {
             />
           </picture>
           <h1>Jon Callahan</h1>
-          <p className="subheader">Software Engineer in California</p>
+          <p className="subheader">Software Engineer in Chicago</p>
           <svg role="presentation" className="icon" viewBox="0 0 24 24">
             <line x1="3" x2="21" y1="24" y2="0" strokeWidth="2" />
             <line x1="21" x2="3" y1="24" y2="0" strokeWidth="2" />
           </svg>
           <p className="bio">
-            Originally from Chicago, I received degrees in Finance and
+            After an early interest in investing, I received degrees in Finance and
             Entrepreneurship from Indiana University's Kelley School of
             Business. While there I took a gap year and lived in the wilderness
-            of Baja California with <a href="https://nols.edu">NOLS</a>. Upon
-            graduating, I worked in business development for a startup while
-            teaching myself how to code. I now work at{" "}
+            of Baja California with <a href="https://nols.edu">NOLS</a>. After
+            graduating, I spent 7 years in the San Francisco Bay Area steeped in the tech industry, hiking, biking, and running the local trails, and tasting my way through the myriad wine regions of Northern California. I now work remotely from Chicago for{" "}
             <a href="https://www.intuit.com">Intuit</a> writing software to help
             small business owners{" "}
             <a href="https://www.quickbooks.intuit.com/invoicing/">get paid</a>.
-            In my free time, you may find me competing in triathlons, hiking a
-            local trail, or visiting a nearby winery.
+            In my free time, you may find me training for triathlons, barbecuing, or trying a new restaurant.
           </p>
 
           <section className="links">
@@ -115,7 +113,6 @@ export default function Home() {
         }
 
         .bio {
-          max-width: 85%;
           margin: 0.5em auto 2em;
           line-height: 1.5;
         }
@@ -150,6 +147,10 @@ export default function Home() {
         }
 
         @media only screen and (max-width: 550px) {
+          .bio {
+            margin-left: 1rem;
+            margin-right: 1rem;
+          }
           img {
             height: 150px;
             width: 150px;
